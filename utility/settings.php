@@ -1,5 +1,7 @@
 <?php
 
+global $config;
+
 require_once dirname(__DIR__) . '/app/Core/Environment.php';
 \WoI\Core\Environment::load(dirname(__DIR__) . '/.env');
 /**
