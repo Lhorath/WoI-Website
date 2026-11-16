@@ -13,17 +13,17 @@ class Structure
 {
     public function Header($extra_info = '')
     {
-        \\WoI\\Core\\View::render('layouts/header', array('extra_info' => $extra_info));
+        \WoI\Core\View::render('layouts/header', array('extra_info' => $extra_info));
     }
 
     public function Top_Menu($page = '')
     {
-        \\WoI\\Core\\View::render('layouts/navbar', array('active_page' => $page));
+        \WoI\Core\View::render('layouts/navbar', array('active_page' => $page));
     }
 
     public function Title_Bar($title_text = '', $type = '')
     {
-        \\WoI\\Core\\View::render('layouts/title-bar', array(
+        \WoI\Core\View::render('layouts/title-bar', array(
             'title_text' => $title_text,
             'title_type' => $type
         ));
@@ -31,11 +31,11 @@ class Structure
 
     public function UserInfo($type = '')
     {
-        \\WoI\\Core\\View::render('layouts/user-info', array('info_type' => $type));
+        \WoI\Core\View::render('layouts/user-info', array('info_type' => $type));
     }
 
     public function Footer()
     {
-        \\WoI\\Core\\View::render('layouts/footer');
+        \WoI\Core\View::render('layouts/footer');
     }
 }
