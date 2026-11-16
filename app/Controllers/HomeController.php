@@ -1,7 +1,7 @@
 <?php
-namespace WoI\\Controllers;
+namespace WoI\Controllers;
 
-use WoI\\Core\\View;
+use WoI\Core\View;
 
 class HomeController extends LegacyController
 {
@@ -10,7 +10,7 @@ class HomeController extends LegacyController
         require_once APP_PATH . '/Legacy/bootstrap.php';
 
         $config = isset($GLOBALS['config']) ? $GLOBALS['config'] : array();
-        $structure = new \\Structure();
+        $structure = new \Structure();
 
         $extra = "<script type='text/javascript'>
             var flashvars = {};
