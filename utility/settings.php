@@ -1,5 +1,9 @@
 <?php
 
+global $config;
+
+require_once dirname(__DIR__) . '/app/Core/Environment.php';
+\WoI\Core\Environment::load(dirname(__DIR__) . '/.env');
 /**
  * @author megosh
  * @copyright 2010
@@ -60,33 +64,33 @@ function GetRootDir()
 //=========================================================================
 
     //mysql settings
-	$config['host'] 					= "127.0.0.1";	//if local must be 127.0.0.1, not localhost for online check
-	$config['user'] 					= "site";		
-	$config['pass'] 					= "E4PJ1H";	
-	$config['realm_db'] 				= "auth";
-    $config['port']                     = "3306";
-	$config['blizz_char_db'] 			= "b_char";
-	$config['blizz_world_db'] 			= "blizz_world2";
-	$config['pvp_char_db'] 				= "f_char";
-	$config['pvp_world_db'] 			= "fun_new_test";
-	$config['dev_char_db'] 				= "f_char";
-	$config['dev_world_db'] 			= "fun_new_test";
-    $config['site_db']                  = "site";
-	$config['blizz_char_backup_db']		= "i_char_backup";
-    $config['vp_item_db']               = "blizz_world";
-    $config['dn_item_db']               = "blizz_world";
+	$config['host'] 					= getenv('DB_HOST') ?: '127.0.0.1';	//if local must be 127.0.0.1, not localhost for online check
+	$config['user'] 					= getenv('DB_USERNAME') ?: '';		
+	$config['pass'] 					= getenv('DB_PASSWORD') ?: '';	
+	$config['realm_db'] 				= getenv('DB_AUTH') ?: 'auth';
+    $config['port']                     = getenv('DB_PORT') ?: '3306';
+	$config['blizz_char_db'] 			= getenv('DB_BLIZZ_CHAR') ?: 'b_char';
+	$config['blizz_world_db'] 			= getenv('DB_BLIZZ_WORLD') ?: 'blizz_world2';
+	$config['pvp_char_db'] 				= getenv('DB_PVP_CHAR') ?: 'f_char';
+	$config['pvp_world_db'] 			= getenv('DB_PVP_WORLD') ?: 'fun_new_test';
+	$config['dev_char_db'] 				= getenv('DB_DEV_CHAR') ?: 'f_char';
+	$config['dev_world_db'] 			= getenv('DB_DEV_WORLD') ?: 'fun_new_test';
+    $config['site_db']                  = getenv('DB_SITE') ?: 'site';
+	$config['blizz_char_backup_db']		= getenv('DB_BLIZZ_CHAR_BACKUP') ?: 'i_char_backup';
+    $config['vp_item_db']               = getenv('DB_VP_ITEM') ?: 'blizz_world';
+    $config['dn_item_db']               = getenv('DB_DN_ITEM') ?: 'blizz_world';
     
     //remote access
-    $config['ra_host']                  = "127.0.0.1";
-    $config['ra_username']              = "RA"; // must be CAPS
-    $config['ra_pass']                  = "ra";
-    $config['ra_blizz_port']            = "3445";
-    $config['pvp_ra_port']              = "";
+    $config['ra_host']                  = getenv('RA_HOST') ?: '127.0.0.1';
+    $config['ra_username']              = getenv('RA_USERNAME') ?: ''; // must be CAPS
+    $config['ra_pass']                  = getenv('RA_PASSWORD') ?: '';
+    $config['ra_blizz_port']            = getenv('RA_BLIZZ_PORT') ?: '3445';
+    $config['pvp_ra_port']              = getenv('RA_PVP_PORT') ?: '';
     
     //socket settings
-	$config['dev_world_port']			= "7000";
-	$config['pvp_world_port']			= "7003";
-	$config['blizz_world_port']			= "7002";
+	$config['dev_world_port']			= getenv('SERVER_DEV_PORT') ?: '7000';
+	$config['pvp_world_port']			= getenv('SERVER_PVP_PORT') ?: '7003';
+	$config['blizz_world_port']			= getenv('SERVER_BLIZZ_PORT') ?: '7002';
 	
 //=========================================================================
 //   VOTE SETTINGS
@@ -165,11 +169,11 @@ function GetRootDir()
 //   PAYPAL SETTINGS
 //=========================================================================	
 
-    $config['paypal_url']               = "https://www.paypal.com/cgi-bin/webscr";//https://www.paypal.com/cgi-bin/webscr
+    $config['paypal_url']               = getenv('PAYPAL_URL') ?: 'https://www.paypal.com/cgi-bin/webscr';//https://www.paypal.com/cgi-bin/webscr
     $conifg['paypal_socket_url']        = "www.paypal.com";
-    $config['paypal_postback_url']      = "http://68.168.100.76/sero/donate/postback.php"; //http://worldofimmortality.servegame.org/donate/postback.php
-    $config['paypal_email']             = "xxjustsurfinxx@aol.com";
-    $config['paypal_currency']          = "USD";
+    $config['paypal_postback_url']      = getenv('PAYPAL_POSTBACK_URL') ?: ''; //http://worldofimmortality.servegame.org/donate/postback.php
+    $config['paypal_email']             = getenv('PAYPAL_EMAIL') ?: '';
+    $config['paypal_currency']          = getenv('PAYPAL_CURRENCY') ?: 'USD';
 	
 //=========================================================================
 //   DEBUG SETTINGS
