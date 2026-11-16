@@ -31,3 +31,6 @@ jobs:
 
       - name: Run environment smoke test
         run: php tests/environment-smoke.php
+
+      - name: Run legacy configuration bridge test
+        run: php tests/settings-env-smoke.php
