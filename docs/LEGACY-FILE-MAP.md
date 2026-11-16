@@ -1,16 +1,16 @@
 # Existing Repository File Map
 
-Legacy scripts are retained in place and invoked through MVC adapters; they are not renamed or deleted in Phase 1.
+Legacy scripts are retained in place; selected informational page bodies have been extracted into MVC views while their original PHP entry points remain available.
 
 ## Root PHP endpoints
 | Existing path | Clean route / treatment |
 |---|---|
 | index.php | / (front controller; original homepage copied to app/Legacy/Pages/home.php) |
 | about.php | /about |
-| connect.php | /connect |
-| contact.php | /contact |
-| faq.php | /faq |
-| tos.php | /rules, /tos |
+| connect.php | /connect (MVC view) |
+| contact.php | /contact (MVC view) |
+| faq.php | /faq (MVC view) |
+| tos.php | /rules, /tos (MVC view) |
 | vent.php | /vent |
 | register.php | /register |
 | status.php | /status |
