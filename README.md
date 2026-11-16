@@ -20,7 +20,7 @@ The legacy settings file reads deployment secrets from the environment while pre
 ## Deployment
 The repository root is the web root (normally public_html). The root .htaccess denies direct HTTP access to app, config, routes, storage, utility cache/log directories and include-only utility PHP files.
 
-Existing public PHP endpoints and static assets remain at their original paths. Clean routes are adapters to the same legacy scripts during Phase 1.
+Existing public PHP endpoints and static assets remain in place. Clean routes are adapters to legacy scripts, and the shared site layout now renders through MVC view templates while preserving the legacy Structure API.
 
 See docs/MVC-MIGRATION.md and docs/LEGACY-FILE-MAP.md.
 
