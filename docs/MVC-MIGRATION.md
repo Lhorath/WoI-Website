@@ -14,6 +14,7 @@ The repository root is the web root and is intended to deploy directly to Hostin
 
 ## Phase 2 — Shared presentation layer
 - Extracted the shared document header, navigation, title bar, user-information panel and footer into real PHP view templates under app/Views/layouts.
+- Migrated the homepage content body into app/Views/home/index.php and changed HomeController to compose the extracted layout and page view. The byte-for-byte legacy homepage copy remains under app/Legacy/Pages as a rollback/reference artifact.
 - Retained the existing Structure class and its public method names as a compatibility facade. Existing legacy pages can keep calling Header(), Top_Menu(), Title_Bar(), UserInfo() and Footer() while the actual markup is rendered by MVC views.
 - Added a layout smoke test that exercises the compatibility facade without connecting to MySQL or changing session/authentication behavior.
 - Corrected the malformed Community Forums anchor while extracting the navigation template.
