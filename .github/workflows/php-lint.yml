@@ -25,6 +25,7 @@ jobs:
           find app config routes tests -type f -name '*.php' -print0 | xargs -0 -n1 php -l
           php -l index.php
           php -l utility/settings.php
+          php -l utility/site_structure.php
 
       - name: Run router smoke test
         run: php tests/router-smoke.php
@@ -34,3 +35,6 @@ jobs:
 
       - name: Run legacy configuration bridge test
         run: php tests/settings-env-smoke.php
+
+      - name: Run MVC layout compatibility test
+        run: php tests/layout-smoke.php
