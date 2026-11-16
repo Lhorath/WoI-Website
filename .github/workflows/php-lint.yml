@@ -1,0 +1,33 @@
+name: PHP lint and smoke tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - mvc/phase-1-foundation
+
+jobs:
+  php-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+
+      - name: Lint MVC and configuration files
+        run: |
+          find app config routes tests -type f -name '*.php' -print0 | xargs -0 -n1 php -l
+          php -l index.php
+          php -l utility/settings.php
+
+      - name: Run router smoke test
+        run: php tests/router-smoke.php
+
+      - name: Run environment smoke test
+        run: php tests/environment-smoke.php
