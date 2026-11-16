@@ -1,0 +1,552 @@
+--------------ERROR-----------
+Date:  2010-10-25 15:39:20
+
+INSERT INTO mail_external (receiver, subject, message) VALUES ('34106', 'Voting Reward', 'Here is your voting reward!
+
+Thank you for choosing World of Immortality!') 
+
+Table 'b_char.mail_external' doesn't exist
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-25 15:53:38
+
+INSERT INTO mail_external (receiver, subject, message) VALUES ('20257', 'Voting Reward', 'Here is your voting reward!
+
+Thank you for choosing World of Immortality!') 
+
+Table 'f_char.mail_external' doesn't exist
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-25 15:55:05
+
+INSERT INTO mail_external (receiver, subject, message) VALUES ('24118', 'Voting Reward', 'Here is your voting reward!
+
+Thank you for choosing World of Immortality!') 
+
+Table 'f_char.mail_external' doesn't exist
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-25 15:55:31
+
+INSERT INTO mail_external (receiver, subject, message) VALUES ('20257', 'Voting Reward', 'Here is your voting reward!
+
+Thank you for choosing World of Immortality!') 
+
+Table 'f_char.mail_external' doesn't exist
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-25 15:56:26
+
+INSERT INTO mail_external (receiver, subject, message) VALUES ('24118', 'Voting Reward', 'Here is your voting reward!
+
+Thank you for choosing World of Immortality!') 
+
+Table 'f_char.mail_external' doesn't exist
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-25 16:33:58
+
+INSERT INTO mail_external (receiver, subject, message) VALUES ('23838', 'Voting Reward', 'Here is your voting reward!
+
+Thank you for choosing World of Immortality!') 
+
+Table 'f_char.mail_external' doesn't exist
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-25 16:35:31
+
+INSERT INTO mail_external (receiver, subject, message) VALUES ('23838', 'Voting Reward', 'Here is your voting reward!
+
+Thank you for choosing World of Immortality!') 
+
+Table 'f_char.mail_external' doesn't exist
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-25 16:35:44
+
+INSERT INTO mail_external (receiver, subject, message) VALUES ('21889', 'Voting Reward', 'Here is your voting reward!
+
+Thank you for choosing World of Immortality!') 
+
+Table 'f_char.mail_external' doesn't exist
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-25 16:42:51
+
+INSERT INTO mail_external (receiver, subject, message) VALUES ('20257', 'Voting Reward', 'Here is your voting reward!
+
+Thank you for choosing World of Immortality!') 
+
+Table 'f_char.mail_external' doesn't exist
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-25 16:50:37
+
+INSERT INTO mail_external (receiver, subject, message) VALUES ('18781', 'Voting Reward', 'Here is your voting reward!
+
+Thank you for choosing World of Immortality!') 
+
+Table 'f_char.mail_external' doesn't exist
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-25 16:52:47
+
+INSERT INTO mail_external (receiver, subject, message) VALUES ('18781', 'Voting Reward', 'Here is your voting reward!
+
+Thank you for choosing World of Immortality!') 
+
+Table 'f_char.mail_external' doesn't exist
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-26 06:35:07
+
+UPDATE `voting` SET `sites`=(`sites` + ), `time`='1288089307' WHERE `user_ip` LIKE '78.69.132.89'
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '), `time`='1288089307' WHERE `user_ip` LIKE '78.69.132.89'' at line 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-26 06:35:07
+
+UPDATE `voting_points` SET `points`=(`points` + 1), `sites`=(`sites` + ), `time`='1288089307' WHERE `id` = 40093
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '), `time`='1288089307' WHERE `id` = 40093' at line 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-26 06:36:16
+
+UPDATE `voting` SET `sites`=(`sites` + ), `time`='1288089376' WHERE `user_ip` LIKE '78.69.132.89'
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '), `time`='1288089376' WHERE `user_ip` LIKE '78.69.132.89'' at line 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-26 06:36:16
+
+UPDATE `voting_points` SET `points`=(`points` + 1), `sites`=(`sites` + ), `time`='1288089376' WHERE `id` = 40093
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '), `time`='1288089376' WHERE `id` = 40093' at line 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-26 20:41:42
+
+DELETE FROM `character_aura` WHERE `spell` = '8326' AND `guid` = '20348'
+
+DELETE command denied to user 'site'@'localhost' for table 'character_aura'
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-10-26 21:11:01
+
+DELETE FROM `character_aura` WHERE `spell` = '8326' AND `guid` = '1280'
+
+DELETE command denied to user 'site'@'localhost' for table 'character_aura'
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-11-06 23:18:01
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'ninj4@pimpstyle.com','4VU40299FT321652T','failed','-42.94','Payment status was not "Completed", but "Reversed".', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-11-06 23:18:06
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'ninj4@pimpstyle.com','0LH16687H3727382A','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-11-06 23:19:57
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'ninj4@pimpstyle.com','0LH16687H3727382A','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-11-06 23:21:23
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'ninj4@pimpstyle.com','3FE57993DY979571R','failed','-42.94','Payment status was not "Completed", but "Reversed".', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-11-06 23:21:24
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'ninj4@pimpstyle.com','6DN08392K54425403','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-11-06 23:22:01
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'ninj4@pimpstyle.com','6DN08392K54425403','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-11-09 16:36:09
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'drillmaster5488@aim.com','6UL93823N5024345N','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-12-17 18:40:59
+
+Query: SELECT `entry`,`name`,`Quality`, `ItemLevel`, 1AllowableClass`, `AllowableRace` FROM `vote_items` WHERE `entry`='11000' LIMIT 1;
+
+SQL error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AllowableRace` FROM `vote_items` WHERE `entry`='11000' LIMIT 1' at line 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-12-17 18:41:19
+
+Query: SELECT `entry`,`name`,`Quality`, `ItemLevel`, 1AllowableClass`, `AllowableRace` FROM `vote_items` WHERE `entry`='11000' LIMIT 1;
+
+SQL error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AllowableRace` FROM `vote_items` WHERE `entry`='11000' LIMIT 1' at line 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-12-17 18:41:45
+
+Query: SELECT `entry`,`name`,`Quality`, `ItemLevel`, 1AllowableClass`, `AllowableRace` FROM `vote_items` WHERE `entry`='11000' LIMIT 1;
+
+SQL error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AllowableRace` FROM `vote_items` WHERE `entry`='11000' LIMIT 1' at line 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-12-17 18:41:54
+
+Query: SELECT `entry`,`name`,`Quality`, `ItemLevel`, 1AllowableClass`, `AllowableRace` FROM `vote_items` WHERE `entry`='9422' LIMIT 1;
+
+SQL error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AllowableRace` FROM `vote_items` WHERE `entry`='9422' LIMIT 1' at line 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-12-17 18:41:57
+
+Query: SELECT `entry`,`name`,`Quality`, `ItemLevel`, 1AllowableClass`, `AllowableRace` FROM `vote_items` WHERE `entry`='11885' LIMIT 1;
+
+SQL error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AllowableRace` FROM `vote_items` WHERE `entry`='11885' LIMIT 1' at line 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-12-17 18:42:07
+
+Query: SELECT `entry`,`name`,`Quality`, `ItemLevel`, 1AllowableClass`, `AllowableRace` FROM `vote_items` WHERE `entry`='37984' LIMIT 1;
+
+SQL error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AllowableRace` FROM `vote_items` WHERE `entry`='37984' LIMIT 1' at line 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-12-17 18:48:48
+
+Query: SELECT `entry`,`name`,`Quality`, `ItemLevel`, 1AllowableClass`, `AllowableRace` FROM `vote_items` WHERE `entry`='7337' LIMIT 1;
+
+SQL error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AllowableRace` FROM `vote_items` WHERE `entry`='7337' LIMIT 1' at line 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-12-17 18:48:55
+
+Query: SELECT `entry`,`name`,`Quality`, `ItemLevel`, 1AllowableClass`, `AllowableRace` FROM `vote_items` WHERE `entry`='21734' LIMIT 1;
+
+SQL error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AllowableRace` FROM `vote_items` WHERE `entry`='21734' LIMIT 1' at line 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2010-12-17 18:49:01
+
+Query: SELECT `entry`,`name`,`Quality`, `ItemLevel`, 1AllowableClass`, `AllowableRace` FROM `vote_items` WHERE `entry`='11000' LIMIT 1;
+
+SQL error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AllowableRace` FROM `vote_items` WHERE `entry`='11000' LIMIT 1' at line 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-03 06:16:02
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','3W3019386A812282W','failed','-9.41','Payment status was not "Completed", but "Reversed".', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-03 06:16:19
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','5SD29547SH9672720','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-03 06:20:27
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','7GM245702F330990U','failed','-14.26','Payment status was not "Completed", but "Reversed".', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-03 06:21:09
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','14X07897NJ0954302','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 02:10:14
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'h_coty@yahoo.com','2R875800MN2382228','failed','-9.41','Payment status was not "Completed", but "Reversed".', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 02:10:33
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'h_coty@yahoo.com','6PV72918F69633049','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 03:06:18
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','69A4780058353154B','failed','-53.10','Payment status was not "Completed", but "Reversed".', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 03:07:06
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','84V54248VN398913K','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 03:54:55
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'h_coty@yahoo.com','1SW37158M8633062W','failed','-9.41','Payment status was not "Completed", but "Reversed".', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 03:54:55
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','1E823683MM0928509','failed','-9.41','Payment status was not "Completed", but "Reversed".', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 03:55:23
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','6VS110655D635914Y','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 03:55:24
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'h_coty@yahoo.com','2U716282N79980430','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 04:00:59
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','8XM897107M799931D','failed','-43.39','Payment status was not "Completed", but "Reversed".', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 04:01:28
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','2A8059534A861892T','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 04:45:19
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','11811800C6576413A','failed','-19.12','Payment status was not "Completed", but "Reversed".', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 04:45:49
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','9MU7981420650482E','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 04:51:39
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','7BX72378EJ338235X','failed','-53.10','Payment status was not "Completed", but "Reversed".', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 04:51:47
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','7YF3858815192114D','failed','-53.10','Payment status was not "Completed", but "Reversed".', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 04:52:14
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','9KP329993K8802911','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-06 04:52:36
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'hentzell_c@yahoo.com','16G24307E78857749','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-28 23:11:01
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'serophis@hotmail.com','71884729FT275552F','failed','-10.00','Cost of rewards (0) was not paid in full:<br>
+', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-28 23:47:02
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'serophis@hotmail.com','6LG87576D8932750L','failed','-15.00','Cost of rewards (0) was not paid in full:<br>
+', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-29 22:31:31
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'serophis@hotmail.com','2TR50398KX313102N','failed','-10.00','Cost of rewards (0) was not paid in full:<br>
+', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-30 13:48:38
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'serophis@hotmail.com','04J12887LH983900X','failed','-10.00','Cost of rewards (0) was not paid in full:<br>
+', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-30 13:49:48
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'serophis@hotmail.com','09625420N8004754L','failed','-10.00','Cost of rewards (0) was not paid in full:<br>
+', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-04-30 17:44:46
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'serophis@hotmail.com','1V8799726J809611H','failed','-20.00','Cost of rewards (0) was not paid in full:<br>
+', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-05-02 16:42:11
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'serophis@hotmail.com','3TT74748NS059761R','failed','-55.00','Cost of rewards (0) was not paid in full:<br>
+', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-05-02 18:55:24
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'serophis@hotmail.com','88D157683M115403L','failed','-45.00','Cost of rewards (0) was not paid in full:<br>
+', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-05-02 19:48:58
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'serophis@hotmail.com','95T44098XN323022X','failed','-55.00','Cost of rewards (0) was not paid in full:<br>
+', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-05-02 19:59:15
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'serophis@hotmail.com','6RX54452G86496532','failed','-55.00','Cost of rewards (0) was not paid in full:<br>
+', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-05-25 02:11:57
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'jansmall69@gmail.com','28566732BC373825L','failed','-33.68','Payment status was not "Completed", but "Reversed".', 0)
+
+Out of range value for column 'amount' at row 1
+
+----------END-ERROR-----------
+--------------ERROR-----------
+Date:  2011-05-25 02:12:13
+
+INSERT INTO donation_log (date,email,txn_id,status,amount,info,account_id) VALUES (NOW(),'jansmall69@gmail.com','80N93189RF160592T','failed','','This transaction id is a duplicate.', 0)
+
+Data truncated for column 'amount' at row 1
+
+----------END-ERROR-----------

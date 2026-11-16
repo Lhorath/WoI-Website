@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/21/trunk/includes
+END
+allspells.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/includes/allspells.php
+END
+allnpcs.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2/trunk/includes/allnpcs.php
+END
+allevents.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/includes/allevents.php
+END
+allachievements.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/includes/allachievements.php
+END
+allutil.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2/trunk/includes/allutil.php
+END
+game.php
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/17/trunk/includes/game.php
+END
+allitems.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/2/trunk/includes/allitems.php
+END
+alllocales.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/includes/alllocales.php
+END
+allquests.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/includes/allquests.php
+END
+allcomments.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/21/trunk/includes/allcomments.php
+END
+smarty.php
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/2/trunk/includes/smarty.php
+END
+kernel.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/19/trunk/includes/kernel.php
+END
+allobjects.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/includes/allobjects.php
+END
+db.php
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/2/trunk/includes/db.php
+END
+allitemsets.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2/trunk/includes/allitemsets.php
+END
