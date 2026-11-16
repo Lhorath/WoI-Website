@@ -37,5 +37,8 @@ RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# Dispatch all remaining clean URLs to the front controller.
+# Keep independent applications' own routing rules and 404 handling.
+RewriteRule ^(forums|wowhead|tournament|php)(/|$) - [L,NC]
+
+# Dispatch remaining main-site clean URLs to the front controller.
 RewriteRule ^ index.php [QSA,L]
