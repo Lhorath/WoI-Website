@@ -1,4 +1,4 @@
-# MVC Migration — Phases 1 and 2
+# MVC Migration — Phases 1–3
 
 ## Deployment
 The repository root is the web root and is intended to deploy directly to Hostinger public_html. The root .htaccess denies HTTP access to application internals and runtime data.
@@ -18,6 +18,13 @@ The repository root is the web root and is intended to deploy directly to Hostin
 - Retained the existing Structure class and its public method names as a compatibility facade. Existing legacy pages can keep calling Header(), Top_Menu(), Title_Bar(), UserInfo() and Footer() while the actual markup is rendered by MVC views.
 - Added a layout smoke test that exercises the compatibility facade without connecting to MySQL or changing session/authentication behavior.
 - Corrected the malformed Community Forums anchor while extracting the navigation template.
+
+## Phase 3 — Informational page migration
+- Migrated the Connection Guide, Contact page, FAQ and Terms of Service bodies into dedicated views under app/Views/pages.
+- Updated PageController to compose those views with the shared header, navigation, title bar and footer.
+- Preserved the original page copy and page-specific navigation/title settings, including the legacy Contact page title text.
+- Kept about.php and vent.php on their legacy adapters: about.php is an older unrelated mockup, and vent.php uses a separate legacy layout/data contract that needs its own audit.
+- Added a no-database smoke test for the four migrated informational views.
 
 ## Compatibility strategy
 Legacy scripts are included from their original directories so relative include behavior is retained as far as possible. The router accepts all existing HTTP methods for legacy adapters and maps /online/{server} to the old online.php svr parameter.
