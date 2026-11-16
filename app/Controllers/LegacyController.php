@@ -15,7 +15,13 @@ abstract class LegacyController extends Controller
             return;
         }
 
-        // Keep the working directory aligned with the original script location.
+        // Recreate the original script context for legacy path calculations.
+        $scriptPath = '/' . str_replace(DIRECTORY_SEPARATOR, '/', ltrim($relativePath, '/'));
+        $_SERVER['PHP_SELF'] = $scriptPath;
+        $_SERVER['SCRIPT_NAME'] = $scriptPath;
+        $_SERVER['SCRIPT_FILENAME'] = $file;
+
+        // Legacy scripts rely on paths relative to their original directory.
         chdir(dirname($file));
         require $file;
     }

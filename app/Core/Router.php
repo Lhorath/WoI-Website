@@ -52,7 +52,8 @@ class Router
     private function invoke($handler, $parameters)
     {
         if (is_array($handler) && count($handler) === 2 && is_string($handler[0])) {
-            $controller = new $handler[0]();
+            $className = $handler[0];
+            $controller = new $className();
             call_user_func_array(array($controller, $handler[1]), $parameters);
             return;
         }
