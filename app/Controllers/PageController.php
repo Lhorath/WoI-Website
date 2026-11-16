@@ -31,23 +31,18 @@ class PageController extends LegacyController
 
     public function vent() { $this->renderLegacy('vent.php'); }
 
-    /**
-     * Render a migrated informational page using the shared MVC layout.
-     * Legacy bootstrap is retained for its established session and helper setup.
-     */
     private function renderInformationalPage($view, $activePage, $title)
     {
         require_once APP_PATH . '/Legacy/bootstrap.php';
 
-        global $config;
-        $structure = new \Structure();
+        $config = isset($GLOBALS['config']) ? $GLOBALS['config'] : array();
 
-        $structure->Header();
-        $structure->Top_Menu($activePage);
-        $structure->Title_Bar($title);
-
-        View::render('pages/' . $view, array('config' => $config));
-
-        $structure->Footer();
+        View::render('layouts/page', array(
+            'config' => $config,
+            'active_page' => $activePage,
+            'title_text' => $title,
+            'content_view' => 'pages/' . $view,
+            'content_data' => array('config' => $config)
+        ));
     }
 }
