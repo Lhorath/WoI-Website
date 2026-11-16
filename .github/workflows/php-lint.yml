@@ -38,3 +38,6 @@ jobs:
 
       - name: Run MVC layout compatibility test
         run: php tests/layout-smoke.php
+
+      - name: Run informational MVC view smoke test
+        run: php tests/informational-views-smoke.php
