@@ -1,33 +1,31 @@
 <?php
-namespace WoI\Controllers;
+declare(strict_types=1);
 
-use WoI\Core\View;
+require_once __DIR__ . '/../models/HomePage.php';
+require_once __DIR__ . '/../models/NewsPost.php';
+require_once __DIR__ . '/../models/NewsContent.php';
+require_once __DIR__ . '/../models/RealmStatus.php';
+require_once __DIR__ . '/../config/Database.php';
 
-class HomeController extends LegacyController
+final class HomeController
 {
-    public function index()
+    public function index(): void
     {
-        require_once APP_PATH . '/Legacy/bootstrap.php';
+        $page = (new HomePage())->content();
+        $newsError = !Environment::load(dirname(__DIR__, 2) . '/.env');
+        $realmStatus = (new RealmStatus())->current();
+        $page['updates'] = [];
 
-        $config = isset($GLOBALS['config']) ? $GLOBALS['config'] : array();
-        $structure = new \Structure();
+        if (!$newsError) {
+            try {
+                $news = new NewsPost(Database::connect('WEB'), Database::connect('AUTH'));
+                $page['updates'] = $news->latest(3);
+            } catch (PDOException | RuntimeException $exception) {
+                error_log('Homepage news query failed: ' . $exception->getMessage());
+                $newsError = true;
+            }
+        }
 
-        $extra = "<script type='text/javascript'>
-            var flashvars = {};
-            flashvars.xml = '".$config['swf_dir']."config.xml';
-            flashvars.font = '".$config['swf_dir']."font.swf';
-            var attributes = {};
-            attributes.wmode = 'transparent';
-            attributes.id = 'slider';
-            swfobject.embedSWF('".$config['swf_dir']."cu3er.swf', 'cu3er-container', '960', '400', '9', '".$config['swf_dir']."expressInstall.swf', flashvars, attributes);
-        </script>";
-
-        $structure->Header($extra);
-        $structure->Top_Menu('index');
-        $structure->Title_Bar('', 'front_page');
-
-        View::render('home/index', array('config' => $config));
-
-        $structure->Footer();
+        require __DIR__ . '/../views/home.php';
     }
 }

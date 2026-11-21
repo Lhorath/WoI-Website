@@ -1,0 +1,8 @@
+<?php
+require_once( 'includes.php' );
+?>
+<html>
+    
+                    Your donation was successful.  Please create a ticket in-game for further instructions.
+
+</html>

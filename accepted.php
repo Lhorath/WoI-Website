@@ -1,8 +1,6 @@
 <?php
-require_once( 'includes.php' );
-?>
-<html>
-    
-                    Your donation was successful.  Please create a ticket in-game for further instructions.
+declare(strict_types=1);
 
-</html>
+require_once __DIR__ . '/app/controllers/DonateController.php';
+
+(new DonateController())->accepted();

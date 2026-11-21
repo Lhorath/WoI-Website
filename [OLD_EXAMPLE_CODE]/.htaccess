@@ -1,0 +1,14 @@
+Options -Indexes
+
+ErrorDocument 401 /utility/errors/401.php
+ErrorDocument 403 /utility/errors/403.php
+ErrorDocument 404 /utility/errors/404.php
+ErrorDocument 500 /utility/errors/500.php
+
+
+DirectoryIndex index.php
+
+RewriteEngine on
+RewriteRule ^(.+)\.htm$ http://localhost/$1.php [R,NC]
+RewriteRule ^(.+)\.html$ http://localhost/$1.php [R,NC]
+RewriteRule ^online/([0-9]+) online.php?svr=$1 [NC]
