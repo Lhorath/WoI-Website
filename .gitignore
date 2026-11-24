@@ -1,1 +1,24 @@
+# Environment and sensitive credentials
 .env
+.env.*
+!.env.example
+
+# Dependencies (if you add Composer later)
+/vendor/
+
+# Logs and temporary files
+*.log
+error_log
+php_errorlog
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE folders
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

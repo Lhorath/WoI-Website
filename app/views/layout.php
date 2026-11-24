@@ -9,9 +9,18 @@ if (!preg_match('#^https?://#i', $discordUrl)) {
 }
 
 if (!isset($basePath)) {
-    $scriptDir = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '')), '/');
-    $basePath = $scriptDir === '' ? '/' : $scriptDir . '/';
+    // Compare the website's actual folder on disk against the server's document root
+    $appRoot = str_replace('\\', '/', dirname(__DIR__, 2));
+    $docRoot = rtrim(str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT'] ?? ''), '/');
+
+    if ($docRoot !== '' && strpos($appRoot, $docRoot) === 0) {
+        $subDir = trim(substr($appRoot, strlen($docRoot)), '/');
+        $basePath = $subDir === '' ? '/' : '/' . $subDir . '/';
+    } else {
+        $basePath = '/';
+    }
 }
+
 
 $escape = static fn(string $value): string => htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 ?>
