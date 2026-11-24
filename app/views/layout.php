@@ -9,9 +9,8 @@ if (!preg_match('#^https?://#i', $discordUrl)) {
 }
 
 if (!isset($basePath)) {
-    $scriptDir = trim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '')), '/');
-    $depth = $scriptDir === '' ? 0 : count(explode('/', $scriptDir));
-    $basePath = $depth > 0 ? str_repeat('../', $depth) : '';
+    $scriptDir = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '')), '/');
+    $basePath = $scriptDir === '' ? '/' : $scriptDir . '/';
 }
 
 $escape = static fn(string $value): string => htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
